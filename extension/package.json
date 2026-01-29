@@ -1,0 +1,36 @@
+{
+  "name": "rag-code-explainer",
+  "displayName": "RAG Code Explainer",
+  "description": "Explain code using a RAG-based AI backend",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "activationEvents": [
+    "onCommand:rag.indexProject",
+    "onCommand:rag.explainCode"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "rag.indexProject",
+        "title": "RAG: Index Project"
+      },
+      {
+        "command": "rag.explainCode",
+        "title": "RAG: Explain Selected Code"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "@types/vscode": "^1.85.0",
+    "@types/fs-extra": "^11.0.1",
+    "fs-extra": "^11.1.1",
+    "typescript": "^5.0.0"
+  }
+}
