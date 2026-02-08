@@ -1,5 +1,5 @@
 import * as vscode from "vscode";
-import { ingestChunk, ingestBatch, deleteProject } from "./api";
+import { ingestChunk, ingestBatch, deleteProject } from "./api_improved";
 import * as path from "path";
 
 export async function indexProject(): Promise<{ filesProcessed: number; chunksCreated: number }> {

@@ -1,6 +1,6 @@
 import * as vscode from "vscode";
-import { indexProject, indexCurrentFile } from "./indexer";
-import { explainCode, explainCurrentFile, getProjectInfo } from "./api";
+import { indexProject, indexCurrentFile } from "./indexer_improved";
+import { explainCode, explainCurrentFile, getProjectInfo } from "./api_improved";
 
 let outputChannel: vscode.OutputChannel;
 let statusBarItem: vscode.StatusBarItem;

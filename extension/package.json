@@ -8,7 +8,11 @@
   },
   "activationEvents": [
     "onCommand:rag.indexProject",
-    "onCommand:rag.explainCode"
+    "onCommand:rag.indexCurrentFile",
+    "onCommand:rag.explainCode",
+    "onCommand:rag.explainFile",
+    "onCommand:rag.askQuestion",
+    "onCommand:rag.showProjectInfo"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -18,8 +22,24 @@
         "title": "RAG: Index Project"
       },
       {
+        "command": "rag.indexCurrentFile",
+        "title": "RAG: Index Current File"
+      },
+      {
         "command": "rag.explainCode",
         "title": "RAG: Explain Selected Code"
+      },
+      {
+        "command": "rag.explainFile",
+        "title": "RAG: Explain Current File"
+      },
+      {
+        "command": "rag.askQuestion",
+        "title": "RAG: Ask Question"
+      },
+      {
+        "command": "rag.showProjectInfo",
+        "title": "RAG: Show Project Info"
       }
     ]
   },
